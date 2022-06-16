@@ -1,0 +1,27 @@
+.md-header {
+  background-color: #232A55 !important
+}
+
+.md-footer-nav {
+  background-color: #232A55 !important
+}
+
+.md-footer-meta {
+  background-color: #16a303 !important;
+}
+
+.md-tabs {
+  background-color: #16a303 !important;
+}
+
+@media only screen and (max-width: 76.1875em) {
+  html .md-nav--primary .md-nav__title--site {
+    background-color: #232A55 !important
+  }
+}
+
+@media only screen and (max-width: 59.9375em) {
+  .md-nav__source {
+    background-color: #16a303 !important;
+  }
+}

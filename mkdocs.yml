@@ -1,0 +1,115 @@
+site_name: Diora Documentation
+site_description: Diora aims to be a public EVM compatible parachain with the following advantages as low transaction fee, fast confirmation time, double validation.
+
+theme:
+  name: 'material'
+  custom_dir: material_override
+  logo: 'images/favicon.png'
+  favicon: 'images/favicon.png'
+  feature:
+    tabs: true
+
+plugins:
+  - redirects
+
+redirects:
+  'Diorascan/features/index': 'products/Diorascan/features/index'
+  'Dioramaster/features/index': 'products/Dioramaster/features/index'
+
+markdown_extensions:
+  - admonition
+  - mdx_math:
+      enable_dollar_delimiter: True
+  - markdown.extensions.extra
+  - markdown.extensions.toc:
+      permalink: True
+  - codehilite:
+      guess_lang: false
+
+extra_javascript:
+    - js/MathJax.js?config=TeX-AMS_HTML
+
+extra_css:
+    - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+    - css/style.css
+
+extra:
+    disqus:
+    social:
+        - type: 'github'
+          link: 'https://github.com/Diora-Network'
+        - type: 'twitter'
+          link: 'https://twitter.com/DioraNetwork'
+        - type: 'telegram'
+          link: 'https://t.me/DioraNetwork'
+        - type: 'medium'
+          link: 'https://medium.com/DioraNetwork'
+
+site_url: https://docs.Diora.network
+repo_url: https://github.com/Diora-Network/
+repo_name: Diora-Network/docs
+google_analytics: ['UA-124597188-1', 'docs.Diorachain.com']
+
+nav:
+    - Overview:
+      - Introduction: index.md
+      - Use Cases: general/use-cases.md
+      - Devnet: general/networks.md
+      - Official Links: general/important-links.md
+      - FAQ: general/faq.md
+    - Getting started:
+      - Products Overview: get-started/productoverview.md
+      - Getting a Wallet: get-started/wallet.md
+      - Get Testnet Tokens: get-started/get-tokens.md
+      - Staking & Voting: get-started/voting.md
+      - Apply for Testnet Node: get-started/apply-node.md
+    - Products:
+      - Basic Explorer: misc/wip.md 
+      - Wallets:
+        - MetaMask: products/diorawallet/mobile.md
+        - Polkadot.js: products/diorawallet/mobile.md
+        - Web Wallet: products/diorawallet/webwallet.md
+        - DioraMask: products/diorawallet/dioramask.md
+        - Alternative Wallet's: products/diorawallet/mobile.md
+        - Mobile Wallet (Coming Soon): products/diorawallet/
+      - Faucet: products/faucet/faucet.md 
+      - DeFiScan: products/diorascan/features.md 
+      - DeFiMaster: products/dioramaster/features.md
+      - Token Bridge:
+        - EVM Bridge (ERC-20): products/tokenbridge/overview.md
+        - Subsrate Bridge (XCM): products/tokenbridge/substrate.md
+      - DioraDex: products/stats/networkstats.md
+      
+    #   - Getting started: misc/wip.md
+    #   - Contributing: misc/wip.md
+    - PoSM:
+      - Overview: masternode/overview.md
+      - Staking/Voting: masternode/voting.md
+      - Double Validation: masternode/doublevalidation.md
+      - DeFiMaster: masternode/defimaster.md
+      - Run a Masternode: masternode/run-node.md
+      - Name Masternode: masternode/name-your-masternode.md
+      - Applying for Masternode Candidacy: masternode/applying.md
+  #   - Contributing: misc/wip.md
+    #   - FAQ: misc/wip.md
+    - Dapp Staking: 
+      - Dapp Staking: dapp/rewardsprogram.md
+      - Gas Rebates : dapp/gas.md
+      - Tx Fees : dapp/txfee.md
+      - Compile & Deploy: 
+        - With Remix: dapp/remix.md
+        - With Truffle: dapp/truffle.md
+        - With Hardhat: dapp/hardhat.md
+    - Developers:
+        - Run Dev Node:
+           - From Binary: developers/binary.md
+           - From Docker: developers/docker.md
+        - Integrations:
+          - Diora Exchange/Wallet: developers/integrations.md
+          - ERC-20 Exchange/Wallet: developers/trc20-integrations.md
+        - Migrate from Ethereum: dapp/Migrate.md
+        - CLI commands: developers/clicommands.md   
+        - API Documentation: https://diora.network
+        - Dev DAO: https://dioranetwork.net
+copyright: If you wish to improve this site, please <a href="https://github.com/Diora-Network/docs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/diora-network/docs/compare"><i class="fa fa-github"></i> send a pull request</a>.
+
