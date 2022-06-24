@@ -9,7 +9,7 @@ Diora relies on a system of 150 Masternodes with Proof of Stake Masternode (PoSM
 With our current core products DioraMaster, DioraScan, DeFiMask, Token Bridge mixed with our future DeFi Products, Algorithmic stable coin, P2P lending market, prediction market, ICO template, STO Platform, DeFiSwap, liquid token lending market, and other financial derivative products we strongly believe that Diora is the best blockchain for Decentralized / Open Finance products.
 
 ## EVM Compatible
-Diora supports all EVM-compatible smart-contracts, protocols, and atomic cross-chain token transfers meaning any Ethereum Dapp can easily be migrated to Diora. New scaling techniques such as sharding, EVM parallelisation, private-chain generation, hardware integration will be continuously researched and incorporated into Diora's Masternode architecture. It will be an ideal scalable smart-contract public blockchain for decentralized apps, token issuances and token integrations for small and big businesses.
+Diora supports all EVM-compatible smart-contracts, protocols, and atomic cross-chain token transfers meaning any Ethereum Dapp can easily be migrated to Diora. New scaling techniques such as sharding, EVM parallelization, private-chain generation, hardware integration will be continuously researched and incorporated into Diora's Masternode architecture. It will be an ideal scalable smart-contract public blockchain for decentralized apps, token issuance's and token integrations for small and big businesses.
 
 ## Gaming Networks
 Historically, games have been run by companies who control the supply and sale of in-game currencies as well as digital assets and collectibles.
@@ -31,3 +31,7 @@ Decentralized apps need a way to sign transactions, but that must happen without
 Diora smart contracts will allow users to pay with any crypto token they prefer and receiver will receive payment in assets they prefer.  Automatically handles the conversion through atomic swaps between cross-chain crypto assets.
 
 ## Decentralized Exchange
+
+***
+
+![Diora](/assets/feature-icon-02.svg)

@@ -12,7 +12,7 @@ The purpose of this public early access testnet is to validate the technical arc
 - Consensus: DPoS (not PoSM enbaled)
 - Block finality: `>95%`
 - Consensus nodes: privately run by DioraLabs
-- Smart contract creation fee: gas price 10000 Gwei, gas limit >= 1000000
+- Smart contract creation fee: gas price 450 Gwei, gas limit >= 1000000
 
 ### Usefull links
 
@@ -36,3 +36,5 @@ You can try all the features we propose like voting, running a masternode, disco
 
 
 ***
+
+![Diora](/assets/feature-icon-04.svg)

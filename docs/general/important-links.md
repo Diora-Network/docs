@@ -15,6 +15,6 @@
 - [Faucet](https://diorafaucet.netlify.app) (Free testnet DIR)
 - [DioraDex]() (Decntralized Exchange)
 - [Discord](https://discord.gg/2bVwpwF9aq) (Chat)
+***
 
-
-## 
+![Diora](/assets/feature-icon-01.svg)
