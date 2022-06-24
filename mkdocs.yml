@@ -64,7 +64,7 @@ nav:
       - Staking & Voting: get-started/voting.md
       - Apply for Testnet Node: get-started/apply-node.md
     - Products:
-      - Basic Explorer: misc/wip.md 
+      - Basic Explorer: products/stats/block.md 
       - Wallets:
         - MetaMask: products/diorawallet/mobile.md
         - Polkadot.js: products/diorawallet/mobile.md
