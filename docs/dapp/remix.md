@@ -29,7 +29,7 @@ contract MyToken is ERC20, Ownable {
 ```
 
 !!! tip
-    This is a mintable ERC20 contract based on openzeppelin. It creates MyToken with symbol ‘MTK’ and initially mints 1000 MTK to the owner of the contract. You can generate this code from OpenZeppelin contract wizard
+    This is a mintable ERC20 contract based on openzeppelin. It creates MyToken with symbol ‘MTK’ and initially mints 1000 MTK to the owner of the contract. You can generate this code from OpenZeppelin contract wizard.
    
 
 * Navigate to the solidity compiler  from the left side navigation and then click on Compile MyToken.sol
