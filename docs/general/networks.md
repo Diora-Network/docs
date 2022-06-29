@@ -21,8 +21,10 @@ The purpose of this public early access testnet is to validate the technical arc
 - [MetaMask](https://metamask.io/) (Main Wallet)
 - [Web Wallet]() (HOT Wallet)
 - [Faucet](https://diorafaucet.netlify.app) (Free testnet DIR)
+- [Custom Polkadot.js](https://dotapps.netlify.app) (Chat)
 - [DioraDex]() (Decntralized Exchange)
 - [Discord](https://discord.gg/2bVwpwF9aq) (Chat)
+
 
 ### For developers
 

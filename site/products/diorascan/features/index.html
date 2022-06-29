@@ -1,0 +1,1387 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Diora aims to be a public EVM compatible parachain with the following advantages as low transaction fee, fast confirmation time, double validation.">
+      
+      
+        <link rel="canonical" href="https://docs.Diora.network/products/diorascan/features/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>DeFiScan - Diora Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="../../../css/style.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../../#home" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://docs.Diora.network" title="Diora Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../../images/favicon.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Diora Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                DeFiScan
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/Diora-Network/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Diora-Network/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../.." title="Overview" class="md-tabs__link">
+          Overview
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../get-started/productoverview/" title="Getting started" class="md-tabs__link">
+          Getting started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../stats/block/" title="Products" class="md-tabs__link md-tabs__link--active">
+          Products
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../masternode/overview/" title="PoSM" class="md-tabs__link">
+          PoSM
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../dapp/rewardsprogram/" title="Dapp Staking" class="md-tabs__link">
+          Dapp Staking
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../developers/binary/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://docs.Diora.network" title="Diora Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../../images/favicon.png" width="48" height="48">
+      
+    </a>
+    Diora Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/Diora-Network/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Diora-Network/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Overview
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Overview
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../general/use-cases/" title="Use Cases" class="md-nav__link">
+      Use Cases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../general/networks/" title="Devnet" class="md-nav__link">
+      Devnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../general/important-links/" title="Official Links" class="md-nav__link">
+      Official Links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../general/faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../get-started/productoverview/" title="Products Overview" class="md-nav__link">
+      Products Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../get-started/wallet/" title="Getting a Wallet" class="md-nav__link">
+      Getting a Wallet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../get-started/get-tokens/" title="Get Testnet Tokens" class="md-nav__link">
+      Get Testnet Tokens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../get-started/voting/" title="Staking & Voting" class="md-nav__link">
+      Staking & Voting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../get-started/apply-node/" title="Apply for Testnet Node" class="md-nav__link">
+      Apply for Testnet Node
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Products
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Products
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stats/block/" title="Basic Explorer" class="md-nav__link">
+      Basic Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Wallets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Wallets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diorawallet/mobile/" title="MetaMask" class="md-nav__link">
+      MetaMask
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diorawallet/mobile/" title="Polkadot.js" class="md-nav__link">
+      Polkadot.js
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diorawallet/webwallet.md" title="Web Wallet" class="md-nav__link">
+      Web Wallet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diorawallet/dioramask/" title="DioraMask" class="md-nav__link">
+      DioraMask
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diorawallet/mobile/" title="Alternative Wallet's" class="md-nav__link">
+      Alternative Wallet's
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diorawallet/" title="Mobile Wallet (Coming Soon)" class="md-nav__link">
+      Mobile Wallet (Coming Soon)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faucet/faucet/" title="Faucet" class="md-nav__link">
+      Faucet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="DeFiScan" class="md-nav__link md-nav__link--active">
+      DeFiScan
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dioramaster/features/" title="DeFiMaster" class="md-nav__link">
+      DeFiMaster
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6">
+    
+    <label class="md-nav__link" for="nav-3-6">
+      Token Bridge
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-6">
+        Token Bridge
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tokenbridge/overview/" title="EVM Bridge (ERC-20)" class="md-nav__link">
+      EVM Bridge (ERC-20)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tokenbridge/substrate/" title="Subsrate Bridge (XCM)" class="md-nav__link">
+      Subsrate Bridge (XCM)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stats/networkstats.md" title="DioraDex" class="md-nav__link">
+      DioraDex
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      PoSM
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        PoSM
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../masternode/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../masternode/voting/" title="Staking/Voting" class="md-nav__link">
+      Staking/Voting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../masternode/doublevalidation/" title="Double Validation" class="md-nav__link">
+      Double Validation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../masternode/defimaster/" title="DeFiMaster" class="md-nav__link">
+      DeFiMaster
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../masternode/run-node/" title="Run a Masternode" class="md-nav__link">
+      Run a Masternode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../masternode/name-your-masternode/" title="Name Masternode" class="md-nav__link">
+      Name Masternode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../masternode/applying/" title="Applying for Masternode Candidacy" class="md-nav__link">
+      Applying for Masternode Candidacy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dapp Staking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Dapp Staking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dapp/rewardsprogram/" title="Dapp Staking" class="md-nav__link">
+      Dapp Staking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dapp/gas/" title="Gas Rebates" class="md-nav__link">
+      Gas Rebates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dapp/txfee/" title="Tx Fees" class="md-nav__link">
+      Tx Fees
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      Compile & Deploy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        Compile & Deploy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dapp/remix/" title="With Remix" class="md-nav__link">
+      With Remix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dapp/truffle/" title="With Truffle" class="md-nav__link">
+      With Truffle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dapp/hardhat/" title="With Hardhat" class="md-nav__link">
+      With Hardhat
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+    
+    <label class="md-nav__link" for="nav-6-1">
+      Run Dev Node
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        Run Dev Node
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../developers/binary/" title="From Binary" class="md-nav__link">
+      From Binary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../developers/docker/" title="From Docker" class="md-nav__link">
+      From Docker
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2">
+      Integrations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-2">
+        Integrations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../developers/integrations/" title="Diora Exchange/Wallet" class="md-nav__link">
+      Diora Exchange/Wallet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../developers/trc20-integrations/" title="ERC-20 Exchange/Wallet" class="md-nav__link">
+      ERC-20 Exchange/Wallet
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dapp/Migrate/" title="Migrate from Ethereum" class="md-nav__link">
+      Migrate from Ethereum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../developers/clicommands/" title="CLI commands" class="md-nav__link">
+      CLI commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://diora.network" title="API Documentation" class="md-nav__link">
+      API Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://dioranetwork.net" title="Dev DAO" class="md-nav__link">
+      Dev DAO
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Diora-Network/edit/master/docs/products/diorascan/features.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="_1"><img alt="DIRScan" src="/assets/defiscanlogo.svg" /><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>DeFiScan provides a block explorer to the Diora ecosystem with user friendly, detailed and professional user interface. 
+DIRScan brings Diora’s transparency to users. 
+All blocks, transactions, smart contracts, tokens and basically everything happening on the chain are shown to the users.
+Furthermore, DIRScan also offers technical overview and expose useful metrics about Diora Network. (Add Images)</p>
+<h2 id="home">[Home]<a class="headerlink" href="#home" title="Permanent link">&para;</a></h2>
+<p><img alt="DeFiScan homepage" src="/assets/defiscan1.jpg" /></p>
+<p>This is the home page of DioraScan.
+In the middle of the page you can find a search field that let you find anything by its address.
+Under it, some general stats gives you the total amount of accounts, tokens, contracts and blocks.</p>
+<h2 id="transactions">[Transactions]<a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h2>
+<p><img alt="DIRScan transactions" src="/assets/DIRscan2.jpg" /></p>
+<p>All the transactions pages list the following informations:
+- The transaction's ID (Transaction Hash).
+- The block containing this transaction.
+- The transaction's age.
+- The sender's address.
+- The recipient's address.
+- The transaction's ammount in DIR.
+- The gas fees.</p>
+<h3 id="all-transactions">[All transactions]<a class="headerlink" href="#all-transactions" title="Permanent link">&para;</a></h3>
+<p>All the transactions that happened on the chain.</p>
+<h3 id="sign-transactions">[Sign transactions]<a class="headerlink" href="#sign-transactions" title="Permanent link">&para;</a></h3>
+<p>Sign transactions emited by the masternodes.</p>
+<h3 id="pending-transactions">[Pending transactions]<a class="headerlink" href="#pending-transactions" title="Permanent link">&para;</a></h3>
+<p>Transactions that are not yet confirmed.</p>
+<h3 id="other-transactions">[Other Transactions]<a class="headerlink" href="#other-transactions" title="Permanent link">&para;</a></h3>
+<p>All the transactions minus the sign and pending ones.</p>
+<h2 id="transaction">[Transaction]<a class="headerlink" href="#transaction" title="Permanent link">&para;</a></h2>
+<p>When consulting a single transaction, the page list the following informations:
+- The transaction's ID (Transaction Hash).
+- The transaction status.
+- The transaction containing block.
+- The transaction age.
+- The transaction sender address.
+- The transaction recipient address.
+- The transaction ammount in DIR.
+- The transaction gas used.
+- The transaction gas price.
+- The transaction total gas cost.
+- The transaction data.</p>
+<h2 id="accounts">[Accounts]<a class="headerlink" href="#accounts" title="Permanent link">&para;</a></h2>
+<p><img alt="DIRScan accounts" src="/assets/DIRscan3.jpg" /></p>
+<p>List the accounts on Diora.</p>
+<h3 id="all-accounts">[All accounts]<a class="headerlink" href="#all-accounts" title="Permanent link">&para;</a></h3>
+<p>All the accounts that exist on the chain.
+The page list the following informations:
+- The account rank (ordered by balance).
+- The account address.
+- The account balance in DIR.
+- The account transactions count.</p>
+<h3 id="all-masternodes">[All masternodes]<a class="headerlink" href="#all-masternodes" title="Permanent link">&para;</a></h3>
+<p>All the masternode accounts that exist on the chain.
+The page list these informations:
+- The account address.
+- The account linked to the masternode name.
+- The account linked to the masternode owner.
+- The account linked to the masternode status.
+- The account linked to the masternode latest signed block.</p>
+<h3 id="verified-contracts">[Verified Contracts]<a class="headerlink" href="#verified-contracts" title="Permanent link">&para;</a></h3>
+<p>All the verified contracts that exist on the chain.
+A contracts has to be manually verified by it's owner to appear here.
+The page list the following informations:
+- The account address.
+- The account contract name.
+- The account balance in DIR.
+- The account transactions count.
+- The account contract verification date.</p>
+<h2 id="account">[Account]<a class="headerlink" href="#account" title="Permanent link">&para;</a></h2>
+<p>When clicking on an account, the following informations are displayed:
+- The account balance in DIR.
+- The DIR USD Value.
+- The account transactions count.
+- The transactions of this account.
+- The mined blocks.
+- The events of this account.
+- The rewards of the account for each epoch.</p>
+<h2 id="tokens">[Tokens]<a class="headerlink" href="#tokens" title="Permanent link">&para;</a></h2>
+<p><img alt="DIRScan tokens" src="/assets/DIRscan4.jpg" /></p>
+<p>List the tokens on Diora and their transfers.</p>
+<h3 id="all-tokens">[All Tokens]<a class="headerlink" href="#all-tokens" title="Permanent link">&para;</a></h3>
+<p>All the tokens on the chain.
+The page list the following informations:
+- The token address (hash).
+- The token name.
+- The token symbol.
+- The token total supply.
+- The token decimals.
+- The token transactions count.</p>
+<h3 id="tokens-transfers">[Tokens transfers]<a class="headerlink" href="#tokens-transfers" title="Permanent link">&para;</a></h3>
+<p>All the tokens transfers on the chain.
+The page list the following informations:
+- The transaction hash.
+- The transaction age.
+- The transaction sender address.
+- The transaction recipient address.
+- The transaction value in token.
+- The token name.</p>
+<h3 id="token">[Token]<a class="headerlink" href="#token" title="Permanent link">&para;</a></h3>
+<p>When clicking on an token, the following informations are displayed:
+- The token name.
+- The number of token holders.
+- The number of transfers made with the token.
+- The link of the official site, please keep in mind that DIRScan is constantly updating. 
+  Some links might be  missing.
+- The official contract adress.
+- Number of decimal.
+- Useful links.
+- "Filtered by": use it if you want to see a the transactions of an adress in particular. 
+  In this example, you can check all the transactions made of the BigBom tokens from an adress to another.</p>
+<h2 id="blocks">[Blocks]<a class="headerlink" href="#blocks" title="Permanent link">&para;</a></h2>
+<p><img alt="DIRScan blocks" src="/assets/DIRscan5.jpg" /></p>
+<p>List all the blocks on Diora.
+The page list the following informations:
+- The block height (index).
+- The block age.
+- The block number of transactions.
+- The block creator.
+- The block total gas used.
+- The block finality.</p>
+<div class="admonition note">
+<p class="admonition-title">Finality</p>
+<p>The percentage of the network who validated this block. 
+When it reach 75%, the block reach it's finality state and is added permanently to the chain.</p>
+</div>
+<h2 id="block">[Block]<a class="headerlink" href="#block" title="Permanent link">&para;</a></h2>
+<p>When consulting a single block, the page list the following informations:
+- The block height (index).
+- The block age.
+- The block number of transactions.
+- The block hash.
+- The block parent hash.
+- The block creator adress.
+- The block finality.
+- The block total gas used.
+- The global pre block gas limit.
+- The block extra data.</p>
+<p>A tab "Transactions" contains the list of transactions in this block.
+A tab "Signers" contains the list of masternode who signed this block.</p>
+<h2 id="login-and-register">[Login and Register]<a class="headerlink" href="#login-and-register" title="Permanent link">&para;</a></h2>
+<p>If you register, you will be able to keep a watchlist of some addresses you are interested into.
+You will receive an email notification when this address perform actions.</p>
+<p>Please keep in mind that DIRScan is subject to go through some changes.
+This is why your feedback is so much appreciated!</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../faucet/faucet/" title="Faucet" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Faucet
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../dioramaster/features/" title="DeFiMaster" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                DeFiMaster
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            If you wish to improve this site, please <a href="https://github.com/Diora-Network/docs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/diora-network/docs/compare"><i class="fa fa-github"></i> send a pull request</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/Diora-Network" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/DioraNetwork" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://t.me/DioraNetwork" class="md-footer-social__link fa fa-telegram"></a>
+    
+      <a href="https://medium.com/DioraNetwork" class="md-footer-social__link fa fa-medium"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../js/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-124597188-1","docs.Diorachain.com"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
