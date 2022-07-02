@@ -1,3 +1,17 @@
+
+## overview
+
+Dapps can earn a portion of transaction fees and inflationary rewards in exchange for their contributions to the network. This earning model is similar to how validators are rewarded for operating nodes in a typical Proof-of-Stake (PoS) chain.
+
+Diora seeks to provide three potential funding sources for dApps:
+
+Gas Fee Rebates
+Dapp Staking
+Smart contract fees (optional)
+
+
+
+
 Upon Mainnet launch Compete Daily for 10 Million DIR by creating competitive Dapps on Diora.
 
 In addition to joining Bounties and Diora Hackathon events, you can also participate in the Dapp Staking Program simply by creating and submitting your Dapp on Diora Mainnet. The more transactions and Daily Active Users (DAU) your Dapp has, the more DIR you will earn.

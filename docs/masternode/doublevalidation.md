@@ -9,3 +9,5 @@ Specifically, when a block is created by a masternode, it must be verified by an
 Double validation strengthens Diora’s security, reduces fork and nothing at stake attacks, and makes Diora unique among other Proof of stake based blockchains.
 
 ![overview](/assets/doublevalidation.jpg)
+
+
