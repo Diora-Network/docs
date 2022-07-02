@@ -98,6 +98,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="../../#gas-rebates" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -850,6 +854,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
     
     <a href="./" title="Gas Rebates" class="md-nav__link md-nav__link--active">
       Gas Rebates
@@ -1110,6 +1116,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1118,10 +1139,28 @@
                   <a href="https://github.com/Diora-Network/edit/master/docs/dapp/gas.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Gas Rebates</h1>
-                
-                <p>We are working hard to provide a complete documentation for all our products but this page is not yet ready.</p>
-<p>&lt;3</p>
+                <h1 id="gas-rebates">Gas Rebates<a class="headerlink" href="#gas-rebates" title="Permanent link">&para;</a></h1>
+<p>Unlike existing smart contract platforms, Diora does not burn gas fees or distribute them entirely to the validators or miners. Instead, the collected gas fees are split between dApp developers, masternodes and our on-chain tresuary.</p>
+<p>At network launch, gas fees are divided as follows. </p>
+<ul>
+<li>
+<p>50% of all gas fees go to the dapp rewards pool for GAS Rebates</p>
+</li>
+<li>
+<p>20% of all gas fees go to refill PoSM block rewards pool for after the 8 year period</p>
+</li>
+<li>
+<p>30% of all gas fees go to treasury split 50/50 with DioraDAO &amp; on-chain treasury</p>
+</li>
+</ul>
+<p>From the developer perspective, a contract receives a 50% rebate on all gas paid. From the masternode perspective, deferring a portion of rewards in the near term effectively drives transaction volumes, fees, and increases the value of the underlying network in the future.</p>
+<p>It would not be profitable for an attacker to spam transactions on the network as gas rebates recoup only part of the fees paid (50%). As an additional safeguard against potential abuse and to prevent the deployment of spam contracts, gas fees are higher for uploading new contracts than for routine transactions. Gas fees are still sufficiently low to allow smaller projects to upload contracts.</p>
+<p>Gas fee rebates are automatically paid out by the network on a per-block basis.</p>
+<h1 id="gas-tracking">Gas Tracking<a class="headerlink" href="#gas-tracking" title="Permanent link">&para;</a></h1>
+<p>to achieve the diora architecture desired properties, the gas tracking module follows this design:</p>
+<p>Wrap the SputnikVM with a GasMeter to allow interception and tracking of information passed by the VM.</p>
+<p>During launch, the recorded information is brought to memory and processed to determine rewards for each of the contracts executed in the last block.</p>
+<p>Developers can choose to take the rewards or give the gas rebate to end users to subsidize transaction costs. </p>
 <p><img alt="overview" src="/assets/feat.svg" /></p>
                 
                   
