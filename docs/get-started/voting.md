@@ -17,7 +17,7 @@ With a connected wallet, it's not time to try voting (staking) for some masterno
 ### Using Web Wallet
 
 DeFi Web Wallet provides a function named `Earn DIR to test`. It allows you to get 25 DIR on the Testnet.
-Just click on it and you will see your balance go up.
+Just click on it and you will see your balance go up..
 
 !!! note
     You can use this function only once. You then have to use the faucet for any extra Testnet DeFi needed.
