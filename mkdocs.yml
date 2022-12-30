@@ -43,12 +43,12 @@ extra:
         - type: 'telegram'
           link: 'https://t.me/DioraNetwork'
         - type: 'medium'
-          link: 'https://medium.com/DioraNetwork'
+          link: 'https://medium.com/@DioraNetwork'
 
-site_url: https://docs.Diora.network
+site_url: https://diora.network/docs
 repo_url: https://github.com/Diora-Network/
 repo_name: Diora-Network/docs
-google_analytics: ['UA-124597188-1', 'docs.Diorachain.com']
+google_analytics: ['UA-124597188-1', 'diora.network/docs']
 
 nav:
     - Overview:
@@ -110,6 +110,6 @@ nav:
         - Migrate from Ethereum: dapp/Migrate.md
         - CLI commands: developers/clicommands.md   
         - API Documentation: https://diora.network
-        - Dev DAO: https://dioranetwork.net
+        - Dev DAO: https://dioradao.net
 copyright: If you wish to improve this site, please <a href="https://github.com/Diora-Network/docs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/diora-network/docs/compare"><i class="fa fa-github"></i> send a pull request</a>.
 
