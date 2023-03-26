@@ -5,8 +5,6 @@ Diora [documentation](https://diora.network/docs).
 
 ## Requirements
 
-- python
-- virtualenv
 
 ## Contribute
 
@@ -18,16 +16,8 @@ git clone https://github.com/diora-network/docs.git
 
 Create a virtualenv for this project.
 
-```bash
 cd docs
-virtualenv .env
-```
 
-Activate your virtualenv.
-
-```bash
-source .env/bin/activate
-```
 
 Install the required libraries in your project's virtualenv.
 
