@@ -19,7 +19,7 @@ git clone https://github.com/diora-network/docs.git
 Create a virtualenv for this project.
 
 ```bash
-cd docs
+cd docs,
 virtualenv .env
 ```
 
